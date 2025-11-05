@@ -4,42 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scores | Jieyu Pan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Playfair Display', 'Noto Serif SC', serif;
+      background: linear-gradient(180deg, #fff5f8 0%, #f6fff9 100%);
+      color: #333;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      color: #444;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 1.5rem;
+    }
+
+    header a:hover {
+      color: #f48db4;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #d16d9c;
+    }
+
+    #scores {
+      max-width: 900px;
+      margin: 4rem auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      padding: 3rem;
+    }
+
+    #scores h2 {
+      text-align: center;
+      background: linear-gradient(90deg, #f6a6ca, #a5eec8);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .score-card {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .score-card h3 {
+      font-size: 1.6rem;
+      color: #d16d9c;
+      margin-bottom: 0.2rem;
+    }
+
+    .score-card em {
+      color: #888;
+      font-size: 1.05rem;
+    }
+
+    .score-card p {
+      text-align: justify;
+      margin: 1rem 0 2rem 0;
+      color: #444;
+    }
+
+    embed {
+      width: 100%;
+      height: 700px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      background: #fafafa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      #scores {
+        padding: 2rem;
+        margin: 2rem 1rem;
+      }
+      embed {
+        height: 480px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- ===== Header ===== -->
   <header>
-    <div class="header-inner">
-      <div class="logo-wrap">
-        <a href="index.html" class="logo-link" aria-label="Back to Home">
-          <svg class="logo-svg" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jieyu Pan">
-            <style>
-              .logo-text { font-family: 'Dancing Script', cursive; font-size:46px; fill:url(#g1); }
-            </style>
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1">
-                <stop offset="0" stop-color="#F5A3C7"/>
-                <stop offset="1" stop-color="#B8EBD0"/>
-              </linearGradient>
-            </defs>
-            <text x="0" y="52" class="logo-text">Jieyu Pan</text>
-          </svg>
-        </a>
-      </div>
-
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-
-      <nav id="main-nav" class="main-nav">
-        <a href="index.html">Home / 首页</a>
-        <a href="#scores">Scores / 乐谱作品</a>
-      </nav>
-    </div>
+    <div><strong style="color:#d16d9c;">Jieyu Pan</strong></div>
+    <nav>
+      <a href="index.html">Home / 首页</a>
+      <a href="#scores">Scores / 乐谱作品</a>
+    </nav>
   </header>
 
-  <!-- ===== Scores Section ===== -->
   <section id="scores">
     <h2>Original Score / 原创作品</h2>
 
@@ -47,24 +124,7 @@
       <h3>Grow (萌芽)</h3>
       <p><em>Piece for Piano & Cello</em></p>
 
-      <p class="score-desc">
+      <p>
         This piece portrays the composer's journey and growth along the path of composition study. 
         Narrative-driven, using documenting personal growth as creative motive, metaphorically comparing 
-        the yearning for composition to a sprouting seed that progresses through four stages: germination, 
-        growth, faltering, and reshaping. A touch of unconventional sounds is employed to express and 
-        simulate the sounds of the natural environment.
-      </p>
-
-      <embed src="Grow_Score.pdf" width="100%" height="650px" type="application/pdf">
-    </div>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer>
-    © 2025 Jieyu Pan. All rights reserved.
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
+        the yearn
