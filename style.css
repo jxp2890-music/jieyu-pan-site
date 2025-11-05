@@ -1,0 +1,51 @@
+/* style.css — 粉绿生机风 */
+:root{
+  --mint-50:#f6fffb;
+  --mint-300:#aef0d7;
+  --mint-500:#7fe7ba;
+  --mint-700:#3bbf91;
+  --bg:#0b0b0c;
+  --card:#0f1112;
+  --text:#ffffff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "Poppins", sans-serif;
+  background: linear-gradient(180deg, #fff 0%, #f7fffaf0 60%);
+  color:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.site-header{position:fixed;left:0;right:0;top:0;backdrop-filter: blur(6px);background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.3));border-bottom:1px solid rgba(0,0,0,0.06)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand h1{margin:0;font-size:20px;color:var(--bg)}
+.brand h1 .cn{font-weight:500;color:var(--mint-700);margin-left:6px}
+.brand p{margin:2px 0 0;font-size:13px;color:rgba(0,0,0,0.6)}
+.nav{display:flex;gap:12px;align-items:center}
+.nav button{border:0;background:var(--mint-500);color:var(--bg);padding:8px 10px;border-radius:8px;cursor:pointer}
+.nav .nav-link{color:rgba(0,0,0,0.8);text-decoration:none;padding:6px 10px;border-radius:6px}
+.hero{height:60vh;display:flex;align-items:center;justify-content:center; background:linear-gradient(135deg,var(--mint-50),#fff); margin-top:64px}
+.hero-inner{text-align:center;padding:20px}
+.hero-title{font-size:20px;margin:0 0 16px;color:var(--bg)}
+.enter-btn{display:inline-block;padding:12px 20px;background:var(--mint-700);color:white;border-radius:999px;text-decoration:none;font-weight:600}
+.section{padding:60px 0}
+.section-title{font-size:22px;margin:0 0 20px;color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.thumb{height:46px;background:linear-gradient(90deg,var(--mint-300),var(--mint-500));border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:700}
+.meta{padding:10px 0}
+.title{font-weight:600;color:var(--bg)}
+.desc{font-size:13px;color:rgba(0,0,0,0.6)}
+.video-wrap{height:220px;border-radius:8px;overflow:hidden;margin-top:8px}
+.video-wrap iframe{width:100%;height:100%;border:0}
+.about-inner{display:flex;gap:24px;align-items:flex-start}
+.bio{flex:2}
+.skills{flex:1;background:linear-gradient(180deg, rgba(127,231,186,0.15), rgba(174,240,215,0.05));padding:12px;border-radius:8px}
+.contact a{color:var(--mint-700);text-decoration:none}
+.site-footer{padding:18px 0;text-align:center;color:rgba(0,0,0,0.6);border-top:1px solid rgba(0,0,0,0.04);background:#fff}
+@media(max-width:900px){
+  .grid{grid-template-columns:repeat(1,1fr)}
+  .about-inner{flex-direction:column}
+  .hero{height:50vh}
+}
