@@ -1,27 +1,25 @@
-/* script.js: bilingual toggle + music control */
-document.addEventListener('DOMContentLoaded', function(){
-  const langBtn = document.getElementById('langToggle');
-  const musicBtn = document.getElementById('musicToggle');
-  const bg = document.getElementById('bgmusic');
-  let lang = 'en';
+{\rtf1\ansi\ansicpg936\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-  langBtn.addEventListener('click', function(){
-    lang = (lang === 'en') ? 'zh' : 'en';
-    document.querySelectorAll('.en').forEach(e=> e.style.display = (lang==='en') ? '' : 'none');
-    document.querySelectorAll('.cn').forEach(e=> e.style.display = (lang==='zh') ? '' : 'none');
-    langBtn.textContent = (lang === 'en') ? '中文' : 'EN';
-  });
-
-  musicBtn.addEventListener('click', function(){
-    if(bg.paused){
-      bg.play().catch(()=>{ alert('Browser blocked autoplay. Click Play on the music control to allow.'); });
-      musicBtn.textContent = 'Pause Music';
-    } else {
-      bg.pause();
-      musicBtn.textContent = 'Play Music';
-    }
-  });
-
-  // initial text state
-  document.querySelectorAll('.cn').forEach(e=> e.style.display = 'none');
-});
+\f0\fs24 \cf0 // ===== Welcome Section Animation + Background Music =====\
+document.addEventListener("DOMContentLoaded", function () \{\
+  const enterBtn = document.getElementById("enter-btn");\
+  const welcome = document.getElementById("welcome");\
+  const bgMusic = document.getElementById("bg-music");\
+\
+  enterBtn.addEventListener("click", () => \{\
+    welcome.style.opacity = "0";\
+    setTimeout(() => \{\
+      welcome.style.display = "none";\
+      bgMusic.volume = 0.4;\
+      bgMusic.play().catch(() => \{\
+        console.log("Autoplay blocked, user must interact first.");\
+      \});\
+    \}, 800);\
+  \});\
+\});\
+}
