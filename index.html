@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jieyu Pan | Composer & Cellist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -23,12 +24,35 @@
 
   <!-- ===== Header ===== -->
   <header>
-    <nav>
-      <a href="#works">Rescore Works / 重配乐作品</a>
-      <a href="scores.html">Scores / 乐谱作品</a>
-      <a href="#about">About / 关于</a>
-      <a href="#contact">Contact / 联系</a>
-    </nav>
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <a href="index.html" class="logo-link" aria-label="Jieyu Pan Home">
+          <svg class="logo-svg" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jieyu Pan">
+            <style>
+              .logo-text { font-family: 'Dancing Script', cursive; font-size:46px; fill:url(#g1); }
+            </style>
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#F5A3C7"/>
+                <stop offset="1" stop-color="#B8EBD0"/>
+              </linearGradient>
+            </defs>
+            <text x="0" y="52" class="logo-text">Jieyu Pan</text>
+          </svg>
+        </a>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav">
+        <a href="#works">Rescore Works / 重配乐作品</a>
+        <a href="scores.html">Scores / 乐谱作品</a>
+        <a href="#about">About / 关于</a>
+        <a href="#contact">Contact / 联系</a>
+      </nav>
+    </div>
   </header>
 
   <!-- ===== Works Section ===== -->
@@ -36,7 +60,7 @@
     <h2>Rescore Works / 重配乐作品</h2>
     <div class="work-grid">
 
-      <div class="work-card">
+      <div class="work-card" style="--delay: 0s;">
         <h3>Breakfast For Three</h3>
         <p>Score for Animation, Mickey Mousing — 2:55 (03/2024)</p>
         <ul>
@@ -44,10 +68,10 @@
           <li>Mirror the sounds and images with each other, blurring the boundary of music and sound effects</li>
           <li>The string part was recorded lively</li>
         </ul>
-        <iframe src="https://player.bilibili.com/player.html?bvid=BV1pPzrYfESB" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://player.bilibili.com/player.html?bvid=BV1pPzrYfESB" frameborder="0" allowfullscreen loading="lazy"></iframe>
       </div>
 
-      <div class="work-card">
+      <div class="work-card" style="--delay: 0.2s;">
         <h3>Alice Through The Looking Glass</h3>
         <p>Orchestral Music with Electronics — 2:53 (06/2024)</p>
         <ul>
@@ -55,26 +79,26 @@
           <li>Extensive use of bass instruments, EQ, and reverb to reveal energy</li>
           <li>Live string recordings</li>
         </ul>
-        <iframe src="https://player.bilibili.com/player.html?bvid=BV1ANzrYFEko" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://player.bilibili.com/player.html?bvid=BV1ANzrYFEko" frameborder="0" allowfullscreen loading="lazy"></iframe>
       </div>
 
-      <div class="work-card">
+      <div class="work-card" style="--delay: 0.4s;">
         <h3>Beyond Us</h3>
         <p>Ensemble with Electronics — 3:10</p>
         <ul>
           <li>Deepen emotions through music</li>
           <li>Combine unusual instrumentation with Omnisphere synthesizers for an industrial tone</li>
         </ul>
-        <iframe src="https://player.bilibili.com/player.html?bvid=BV1JGzrYWEjq" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://player.bilibili.com/player.html?bvid=BV1JGzrYWEjq" frameborder="0" allowfullscreen loading="lazy"></iframe>
       </div>
 
-      <div class="work-card">
+      <div class="work-card" style="--delay: 0.6s;">
         <h3>War for the Forest (Film Score, 2024)</h3>
         <p>Orchestral Music with Electronics — 2:58 (09/2024)</p>
         <ul>
           <li>Highlight a progressive war scenario using orchestration, harmony, and form</li>
         </ul>
-        <iframe src="https://player.bilibili.com/player.html?bvid=BV1pPzrYfE2j" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://player.bilibili.com/player.html?bvid=BV1pPzrYfE2j" frameborder="0" allowfullscreen loading="lazy"></iframe>
       </div>
 
     </div>
@@ -83,19 +107,28 @@
   <!-- ===== About Section ===== -->
   <section id="about">
     <h2>About / 关于</h2>
-    <p>
-      Jieyu Pan is a Chinese cellist and composer currently pursuing her master study. 
-      She plays as a soloist and in ensembles and orchestras for music of different genres and styles. 
-      She found her passion in composition through these rich performing experiences and discovered 
-      her particular compositional interest in film score and other visual media. 
-      Pan hopes to express and convey the beauty of music to her audiences and herself, 
-      as well as our living world.
-    </p>
-    <p>
-      潘杰妤是一位来自中国的大提琴演奏家与作曲家，目前正在攻读硕士学位。她活跃于独奏、室内乐及各类风格的乐团演出中， 
-      并在丰富的演奏经历中发现了对作曲的热情，尤其专注于影视配乐及其他视觉媒体音乐的创作。 
-      她希望通过音乐传达与表达世界与自我之美，将情感与听觉体验融为一体。
-    </p>
+
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="media/jieyu-pan-photo.jpg" alt="Jieyu Pan portrait" />
+      </div>
+
+      <div class="about-text">
+        <p>
+          Jieyu Pan is a Chinese cellist and composer currently pursuing her master study at the University of Miami. 
+          She plays as a soloist and in ensembles and orchestras for music of different genres and styles. 
+          She found her passion in composition through these rich performing experiences and discovered 
+          her particular compositional interest in film score and other visual media. 
+          Pan hopes to express and convey the beauty of music to her audiences and herself, 
+          as well as our living world.
+        </p>
+        <p>
+          潘杰妤是一位来自中国的大提琴演奏家与作曲家，目前就读于迈阿密大学音乐学院硕士课程。她活跃于独奏、室内乐及各类风格的乐团演出中， 
+          并在丰富的演奏经历中发现了对作曲的热情，尤其专注于影视配乐及其他视觉媒体音乐的创作。 
+          她希望通过音乐传达与表达世界与自我之美，将情感与听觉体验融为一体。
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- ===== Contact Section ===== -->
@@ -114,3 +147,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+

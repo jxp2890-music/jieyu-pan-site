@@ -4,24 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scores | Jieyu Pan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ===== Header ===== -->
   <header>
-    <nav>
-      <a href="index.html">Home / 首页</a>
-      <a href="#scores">Scores / 乐谱作品</a>
-    </nav>
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <a href="index.html" class="logo-link" aria-label="Back to Home">
+          <svg class="logo-svg" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jieyu Pan">
+            <style>
+              .logo-text { font-family: 'Dancing Script', cursive; font-size:46px; fill:url(#g1); }
+            </style>
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#F5A3C7"/>
+                <stop offset="1" stop-color="#B8EBD0"/>
+              </linearGradient>
+            </defs>
+            <text x="0" y="52" class="logo-text">Jieyu Pan</text>
+          </svg>
+        </a>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav">
+        <a href="index.html">Home / 首页</a>
+        <a href="#scores">Scores / 乐谱作品</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- ===== Scores Section ===== -->
   <section id="scores">
     <h2>Original Score / 原创作品</h2>
 
-    <div class="work-card">
+    <div class="score-card">
       <h3>Grow (萌芽)</h3>
       <p><em>Piece for Piano & Cello</em></p>
 
-      <p>
+      <p class="score-desc">
         This piece portrays the composer's journey and growth along the path of composition study. 
         Narrative-driven, using documenting personal growth as creative motive, metaphorically comparing 
         the yearning for composition to a sprouting seed that progresses through four stages: germination, 
@@ -29,12 +55,16 @@
         simulate the sounds of the natural environment.
       </p>
 
-      <embed src="Grow_Score.pdf" width="100%" height="600px" type="application/pdf">
+      <embed src="Grow_Score.pdf" width="100%" height="650px" type="application/pdf">
     </div>
   </section>
 
+  <!-- ===== Footer ===== -->
   <footer>
     © 2025 Jieyu Pan. All rights reserved.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
